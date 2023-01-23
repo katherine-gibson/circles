@@ -1,32 +1,133 @@
+body {
+    font-family: 'Arvo', serif;
+    color:rgb(61, 59, 60);
+    background-color:rgb(50, 48, 49)
+}
+
+#header{
+    position:fixed;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color:rgb(193, 189, 179); 
+    padding-left: 265px;
+    padding-right: 260px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+#title{
+    font-size:60px;
+}
+
+
+
+#wheel {
+    width:400px;
+    height: 400px;
+    position: relative;
+    animation: rotation 8s infinite linear;    
+}
+
+.vinyl {
+    max-width:400px;
+    max-height: 400px;
+    animation: rotation 50s infinite linear;
+    border-radius: 50%;
+}
+
+.circle {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(193, 189, 179); 
+    border-radius: 50%;
+    box-shadow: -10px 10px 8px black;
+    position: absolute;
+    font-size:10px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    animation: reverse-rotation 8s infinite linear;
+}
+
+
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
   
 .column {
+    /* display: flex; */
     flex: 50%;
-    max-width: 25%;
+    max-width: 50%;
     text-align: center;
+    margin-top: 200px;
+    
 }
 
-.column img {
-    vertical-align: middle;
-    width: 90%;
+.box {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: rgb(127, 121, 121);
+    max-width: 90%;
+    font-size: 20px;
+    margin:15px;
+    height:50px;
+    opacity: 90%;
+    display: flex;
+    align-items: center; 
+    justify-content: left;
+    padding-left: 50px;
 }
 
-h1 {
-    text-align: center;
-    padding: 50px;
 
+iframe {
+    width: 400px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 70px;
 }
 
-.material-symbols-outlined {
-    color:blueviolet;
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48
-  }
+
+
+.albums img {
+    border-radius: 50%;
+    width:50px;
+    height: 50px;
+    transform: translateX(-70px);
+    position: absolute;
+}
+
+.current {
+    background-color:rgb(193, 189, 179) !important ;
+    margin-top: 50px;
+
+}
+.box :hover{
+    background-color:rgb(193, 189, 179) !important ;
+}
+
+
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+  @keyframes reverse-rotation {
+    from {
+      transform: rotate(359deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+}
