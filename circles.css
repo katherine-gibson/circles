@@ -1,0 +1,32 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+  
+.column {
+    flex: 50%;
+    max-width: 25%;
+    text-align: center;
+}
+
+.column img {
+    vertical-align: middle;
+    width: 90%;
+}
+
+h1 {
+    text-align: center;
+    padding: 50px;
+
+}
+
+.material-symbols-outlined {
+    color:blueviolet;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
