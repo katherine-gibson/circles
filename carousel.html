@@ -4,45 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>carousel</title> <!--title-->
-    <link rel="icon" href="images/circle-png-8.png"> <!--icon-->
+    <!--title-->
+    <title>carousel</title> 
+     <!--icon-->
+    <link rel="icon" href="images/circle-png-8.png">
+     <!--linking css-->
     <link rel="stylesheet" href="carousel.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class= "wheel"> 
-        <div class = "centre">
-            <video 
-                width="320" height="240" autoplay muted>
-                <source src="movie.mp4" type="video/mp4">
-            >
-          Your browser does not support the video tag.
-          </video></div>
-        <div class="circle">1 <br>Circles</div>
-        <div class="circle">2 <br>Complicated</div>
-        <div class="circle">3 <br>Blue World</div>
-        <div class="circle">4 <br>Good News</div>
-        <div class="circle">5 <br>I Can See</div>
-        <div class="circle">6 <br>Everybody</div>
-        <div class="circle">7 <br>Woods</div>
-        <div class="circle">8 <br>Hand Me Downs</div>
-        <div class="circle">9 <br>That's On Me</div>
-        <div class="circle">10<br> Hands</div>
-        <div class="circle">11<br> Surf</div>
-        <div class="circle">12<br> Once a Day</div>
-
+    <div id="header">
+    <div id="title">Circles (album by Mac Miller)</div>
+    <div id="subtitle">Katherine Gibson</div>
     </div>
 
+    <div class="row">
+        <div class="column">
+            <!--spinning wheel of circles-->
+            <div id= "wheel"> 
+                <div class="centre"><img class="vinyl" src="images/vinyl.png" width="400px"></div>
+                <div class="circle">12<br>Once a Day</div>
+                <div class="circle">11<br> Surf</div>
+                <div class="circle">10<br> Hands</div>
+                <div class="circle">9 <br>That's On Me</div>
+                <div class="circle">8 <br>Hand Me Downs</div>
+                <div class="circle">7 <br>Woods</div>
+                <div class="circle">6 <br>Everybody</div>
+                <div class="circle">5 <br>I Can See</div>
+                <div class="circle">4 <br>Good News</div>
+                <div class="circle">3 <br>Blue World</div>
+                <div class="circle">2 <br>Complicated</div>
+                <div class="circle" >1 <br>Circles</div>
+            </div>
+            <!--iframe to spotify-->
+            <iframe style="border-radius:12px" 
+                src="https://open.spotify.com/embed/album/5sY6UIQ32GqwMLAfSNEaXb?utm_source=generator" 
+                width="100%" height="380" frameBorder="0" allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+            </iframe>
+        </div>
 
-
-        <iframe style="border-radius:12px" 
-            src="https://open.spotify.com/embed/album/5sY6UIQ32GqwMLAfSNEaXb?utm_source=generator" 
-            width="100%" height="380" frameBorder="0" allowfullscreen="" 
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-        </iframe>
-        <button id = "button">Next</button>
+        <!--list of his other albums (display flex next to vinyl)-->
+        <div class="column">
+            <p class="albums box current"><img src="images/c.jpg">Circles</p>
+            <div class="albums box"><img src="images/s.jpg">Swimming</div>
+            <div class="albums box"><img src="images/Mac_Miller_-_The_Divine_Feminine.png">The Divine Feminine</div>
+            <div class="albums box"><img src="images/god.jpg">GO:OD AM</div>
+            <div class="albums box"><img src="images/movies.jpg">Watching Movies with the Sound Off</div>
+            <div class="albums box"><img src="images/illty.png">I Love Life, Thank You</div>
+            <div class="albums box"><img src="images/bsp.jpg">Blue Slide Park</div>
+            <div class="albums box"><img src="images/bde.jpg">Best Day Ever</div>
+        </div>
+    </div>
 </body>
 
 
-
-<script src="carousel.js"></script>
+<!--link to js-->
+<script src="carousel.js" await></script>
 </html> 
